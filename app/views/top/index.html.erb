@@ -9,8 +9,7 @@
     <div class="twitter-image">
       <img src="<%= asset_path "twitter.png" %>">
     </div>
-    <div class="tweet-btn btn btn-primary btn-block">
-      早速つぶやいてみる
+      <%= link_to "早速つぶやいてみる", new_tweet_path, class: 'tweet-btn btn btn-default' %>
     </div>
 </div>
       </div>
