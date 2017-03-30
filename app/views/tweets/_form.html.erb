@@ -1,12 +1,12 @@
 <%= form_for(@tweet, url: choose_new_or_edit) do |f| %>
   <% if @tweet.errors.any? %>
     <div id="error_explanation">
-      # バリデーションエラーの件数を表示します。
+      <%# バリデーションエラーの件数を表示します。 %>
       <h2><%= @tweet.errors.count %>件のエラーがあります。</h2>
 
       <ul>
-      # @tweet.errorsは@tweetをバリデーションした際のエラー情報です。
-      # full_messagesは複数のエラーメッセージを表します。
+      <%# @tweet.errorsは@tweetをバリデーションした際のエラー情報です。 %>
+      <%# full_messagesは複数のエラーメッセージを表します。 %>
       <% @tweet.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
